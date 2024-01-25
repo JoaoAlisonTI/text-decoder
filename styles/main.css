@@ -1,0 +1,15 @@
+:root {
+  --dark-blue-300: #0A3871;
+  --light-blue-100: #F3F5FC;
+  --grey-500: #343A40;
+  --grey-400: #495057;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--light-blue-100);
+  font-family: "Inter";
+}
