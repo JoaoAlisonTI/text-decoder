@@ -3,6 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./public/icon-app.png" type="image/x-icon" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,41 +11,49 @@
     
     <link rel="stylesheet" href="./styles/main.css" type="text/css" media="all" />
     
-    
-    <script defer="" src="./js/main.js" type="text/javascript" charset="utf-8"></script>
-    
     <title>Decodificador de Texto</title>
     
   </head>
   <body>
+    
     <header>
       <img src="./public/assets/logo.svg" alt="logo da Alura" />
     </header>
     <main>
       <div class="div-primary">
         <textarea
+          id="meuInput"
           name="textarea"
           rows=""
           cols=""
-          placeholder="Digite seu texto aqui"></textarea>
-        <div>
+          placeholder="Digite seu texto" 
+          value=""
+          ></textarea>
+        <span id="toast-error">
+          <h3>🚨ERROR🚨</h3>
+        Preencha com os valores indicados na regra.
+        </span>
+        <div class="div-rule">
           <img src="./public/assets/exclamation-icon.svg" alt="Icon de exclamação" />
           <p>Apenas letras minúsculas e sem acento.</p>
         </div>
-        <div>
-          <button>Criptografar</button>
-          <button>Descriptografar</button>
+        <div class="div-actions">
+          <button id="btn-criptografar" >Criptografar</button>
+          <button id="btn-descriptografar">Descriptografar</button>
         </div>
+        <footer>2024 Developed by <a href="https://github.com/JoaoAlisonTI">JoaoAlisonTI</a>
+        </footer>
       </div>
       
       <div class="div-secondary">
-        <img src="./public/assets/nada-encontrado.svg" alt="Imagem nada encontrado" />
+        <img id="image-search" src="./public/assets/nada-encontrado.svg" alt="Imagem nada encontrado" />
         <div class="div-result">
           <h2>Nenhuma mensagem encontrada</h2>
           <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
         </div>
-        <button>Copiar</button>
+        <button onclick="copiarTexto()" id="btn-copy">Copiar</button>
       </div>
     </main>
+    <script src="./js/main.js"></script>
   </body>
 </html>
