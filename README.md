@@ -52,6 +52,7 @@ As "chaves" de criptografia utilizadas são:
 
 ### Links
 - [Acesse o projeto finalizado, online ☁️](https://joaoalisonti.github.io/text-decoder/)
+- [Figma do projeto](https://www.figma.com/file/tvFEYhVfZTjdJ5P24RGV21/Alura-Challenge---Desafio-1---L%C3%B3gica?node-id=16%3A802)
 
 </br>
 
